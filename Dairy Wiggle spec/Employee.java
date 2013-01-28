@@ -1,3 +1,4 @@
+// @BC: This superclass and its subclasses are simple, clean, effective. Nicely done!
 public abstract class Employee {
 	private double effectivenessMultiplyer;
 	private int baseWeeklySalary;
@@ -23,6 +24,7 @@ public abstract class Employee {
 		return effectivenessMultiplyer;
 	}
 	public String toString() {
+		// @BC: The string is missing a space at the end, 
 		return "I am an employee with an effectiveness multiplyer of "+effectivenessMultiplyer+", a weekly salary of "+baseWeeklySalary+", and a total payment of"+totalPaymentToDate;
 	}
 }

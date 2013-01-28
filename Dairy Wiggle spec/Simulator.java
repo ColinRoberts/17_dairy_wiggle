@@ -21,13 +21,16 @@ class Simulator {
 		}
 		for (int i = 0; i < 24; i++) {
 			for (int j = 0; j < e.length; j++) {
+				// @BC: Employees have to work on the weekends, eh? Harsh.  ;)
 				for (int x = 0; x < 7; x++) {
 					e[j].work();
 				}
 				e[j].earnPaycheck();
 				e[j].setEM(1);
 			}
+			// @BC: Although this works, a more descriptive method name would be helpful
 			print(i);
+			// @BC: Since the counter starts at 0, "week 0" starts the simulation and is then marked as a new month after that
 			if (i % 4 == 0) {
 				System.out.println("New Month");
 				rndm = r.nextInt(6);
@@ -35,6 +38,7 @@ class Simulator {
 			}
 		}
 	}
+	// @BC: Since this method is not implemented and is never called, it can be removed
 	public void dance() {
 		
 	}
