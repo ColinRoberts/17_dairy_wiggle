@@ -14,6 +14,9 @@ public abstract class Employee {
 	public void earnPaycheck() {
 		totalPaymentToDate += baseWeeklySalary * effectivenessMultiplyer;
 	}
+	// @BC: In the instructions it specifies that earnBonus should take a parameter --
+	//	this way each time an employee earns a bonus it can be for a new, random amount
+	//	(rather than making the bonus potentially constant for each employee)
 	public void earnBonus() {
 		totalPaymentToDate += bonus;
 	}
